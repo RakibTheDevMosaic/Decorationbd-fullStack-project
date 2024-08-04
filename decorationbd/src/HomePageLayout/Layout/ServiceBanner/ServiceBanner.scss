@@ -1,0 +1,82 @@
+@import "../../../css-config/mixins.scss";
+
+.bannerContainer3{
+    overflow: hidden;
+    border: 0;
+    margin-bottom: 5px;
+    @include sm{
+        overflow: hidden;
+        border: 0;
+        margin-bottom: 10px;
+    }
+    .imgContainer3{
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    @include md{
+        overflow: hidden;
+        border: 1px solid rgba(0,0,0,0.2);
+        margin-bottom: 0;
+        .imgContainer3{
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    @include lg{
+        overflow: hidden;
+        border: 1px solid rgba(0,0,0,0.2);
+        margin-bottom: 0;
+        .imgContainer3{
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    @include xl{
+        overflow: hidden;
+        border: 1px solid rgba(0,0,0,0.2);
+        margin-bottom: 0;
+        .imgContainer3{
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    @include xxl{
+        overflow: hidden;
+        border: 1px solid rgba(0,0,0,0.2);
+        margin-bottom: 0;
+        .imgContainer3{
+            width: 100%;
+            height: 230px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

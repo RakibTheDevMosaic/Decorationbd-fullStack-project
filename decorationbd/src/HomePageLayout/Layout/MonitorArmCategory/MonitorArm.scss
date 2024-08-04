@@ -1,0 +1,241 @@
+@import "../../../css-config/mixins.scss";
+.monitorArmCategory{
+    border: 1px solid rgba(0,0,0,0.12);
+    overflow: hidden;
+    div{
+        h1{
+            padding-top: 10px; 
+            font-size: 16px;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 5px;
+             width: 46%;
+             height: 3px;
+             background-color: #077bc4;
+           }
+           @include sm{
+            padding-top: 10px; 
+            font-size: 20px;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 5px;
+             width: 40%;
+             height: 3px;
+             background-color: #077bc4;
+           }
+           }
+           @include md{
+            padding: 15px 0 0 15px; 
+            font-size: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 10px;
+             width: 28%;
+             height: 3px;
+             background-color: #077bc4;
+           }
+           }
+           @include lg{
+            padding: 15px 0 0 15px; 
+            font-size: 22px;
+            margin-bottom: 25px;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 15px;
+             width: 20%;
+             height: 3px;
+             background-color: #077bc4;
+           }
+           }
+           @include xl{
+            width: 25%;
+            padding: 20px 0 0 15px; 
+            font-size: 23px;
+            margin-bottom: 0;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 15px;
+             width: 28%;
+             height: 3px;
+             background-color: #077bc4;
+           }
+           }
+           @include xxl{
+            width: 20%;
+            padding: 15px 0 0 15px; 
+            font-size: 22px;
+            margin-bottom: 0;
+            position: relative;
+            &::after{
+             content: "";
+             position: absolute;
+             bottom: -3px;
+             left: 15px;
+             width: 26%;
+             height: 3px;
+             background-color: #077bc4;
+           }
+           }
+        }
+        .subCategories{
+            // width: 98%;
+            // height: 100px;
+            display: flex;
+            // flex-wrap: nowrap;
+            align-items: center;
+            gap: 6px;
+            text-transform: capitalize;
+            font-size: 14px;
+            font: 600;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid rgba(0,0,0,0.2);
+            // overflow-x: auto;
+    
+            span{
+                cursor: pointer;
+                &:hover{
+                    color: #077bc4;
+                }
+            }
+            @include sm{
+                // width: 98%;
+                // max-width: 200%;
+                // height: 100px;
+                display: flex;
+                // flex-wrap: nowrap;
+                // flex-flow: row;
+                align-items: center;
+                gap: 20px;
+                text-transform: capitalize;
+                font-size: 18px;
+                font: 600;
+                margin-left: 20px;
+                margin-bottom: 15px;
+                border-bottom: 3px solid rgba(0,0,0,0.2);
+                // overflow-x: auto;
+        
+                span{
+                    padding: 2px 5px;
+                    display: inline-block;
+                    cursor: pointer;
+                    &:hover{
+                        color: #077bc4;
+                    }
+                }
+            }
+            @include md{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                text-transform: capitalize;
+                font-size: 17px;
+                font-weight: 500;
+                margin-left: 0;
+                margin-bottom: 15px;
+                border-bottom: 0;
+                span{
+                    cursor: pointer;
+                    &:hover{
+                        color: #077bc4;
+                    }
+                }
+            }
+            @include lg{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                text-transform: capitalize;
+                font-size: 18px;
+                font-weight: 600;
+                margin-left: 0;
+                margin-bottom: 25px;
+                border-bottom: 0;
+                span{
+                    cursor: pointer;
+                    &:hover{
+                        color: #077bc4;
+                    }
+                }
+            }
+            @include xl{
+                display: flex;
+                align-items: center;
+                gap: 35px;
+                text-transform: capitalize;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 35px 0 0 0;
+                margin-left: 0;
+                margin-bottom: 25px;
+                border-bottom: 0;
+                span{
+                    cursor: pointer;
+                    &:hover{
+                        color: #077bc4;
+                    }
+                }
+            }
+            @include xxl{
+                display: flex;
+                align-items: center;
+                gap: 45px;
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 35px 0 0 0;
+                margin-left: 0;
+                margin-bottom: 25px;
+                border-bottom: 0;
+                span{
+                    cursor: pointer;
+                    &:hover{
+                        color: #077bc4;
+                    }
+                }
+            }
+            
+        }
+    }
+    .monitorProductCard{
+        margin: 0px 2px;
+       @include md{
+        margin: 0 25px 15px 25px;
+       }
+       @include lg{
+        margin: 0 10px 15px 10px;
+       }
+       @include xl{
+        margin: 0 15px 15px 15px;
+       }
+       @include xxl{
+        margin: 0 15px 15px 15px;
+       }
+        
+    }
+    .monitorProductCardClicked{
+        transform: translateX(100%);
+        animation: productSlide 1s ease-in forwards;
+    }
+
+}
+@keyframes productSlide {
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(0);}
+}

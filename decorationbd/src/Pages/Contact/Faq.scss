@@ -1,0 +1,233 @@
+@import "../../css-config/mixins.scss";
+.faq{
+    margin: 10px;
+    padding: 10px 8px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    &:nth-child(5){
+        border-bottom: none;
+    }
+    .faq-question{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 600px;
+        color: #242424;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        &:hover{
+            color:#077bc4;
+        }
+        svg{
+            font-size: 16px;
+            font-weight: 300;
+            transform: rotate(0deg);
+            transition: all 0.4s ease;
+        }
+    }
+    .faq-answer{
+        opacity: 0;
+        max-height: 0;
+        overflow-y: hidden;
+        transition: all 0.8s ease;
+        font-size: 15px;
+        font-weight: 600;
+        color: #077bc4;
+        margin-left: 8px;
+        padding: 3px 0 3px 5px;
+        &:hover{
+            background-color: #077bc4;
+            color: white;
+            transition: 0.5s ease-in;
+        }
+    }
+    @include sm{
+        margin: 10px;
+        padding: 10px 8px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        &:nth-child(5){
+            border-bottom: none;
+        }
+        .faq-question{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 600px;
+            color: #242424;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            &:hover{
+                color:#077bc4;
+            }
+            svg{
+                font-size: 16px;
+                font-weight: 300;
+                transform: rotate(0deg);
+                transition: all 0.4s ease;
+            }
+        }
+        .faq-answer{
+            opacity: 0;
+            max-height: 0;
+            overflow-y: hidden;
+            transition: all 0.8s ease;
+            font-size: 16px;
+            font-weight: 600;
+            color: #077bc4;
+            margin-left: 8px;
+            padding: 3px 0 3px 5px;
+            &:hover{
+                background-color: #077bc4;
+                color: white;
+                transition: 0.5s ease-in;
+            }
+        }
+    }
+    @include md{
+        margin: 10px;
+        padding: 15px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        &:nth-child(5){
+            border-bottom: none;
+        }
+        .faq-question{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 800px;
+            color: #242424;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            &:hover{
+                color:#077bc4;
+            }
+            svg{
+                font-size: 16px;
+                font-weight: 300;
+                transform: rotate(0deg);
+                transition: all 0.4s ease;
+            }
+        }
+        .faq-answer{
+            opacity: 0;
+            max-height: 0;
+            overflow-y: hidden;
+            transition: all 0.8s ease;
+            font-size: 16px;
+            font-weight: 600;
+            color: #077bc4;
+            margin-left: 8px;
+            padding: 3px 0 3px 5px;
+            &:hover{
+                background-color: #077bc4;
+                color: white;
+                transition: 0.5s ease-in;
+            }
+        }
+    }
+    @include lg{
+        margin: 10px;
+        padding: 15px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        &:nth-child(5){
+            border-bottom: none;
+        }
+        .faq-question{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 800px;
+            color: #242424;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            &:hover{
+                color:#077bc4;
+            }
+            svg{
+                font-size: 16px;
+                font-weight: 300;
+                transform: rotate(0deg);
+                transition: all 0.4s ease;
+            }
+        }
+        .faq-answer{
+            opacity: 0;
+            max-height: 0;
+            overflow-y: hidden;
+            transition: all 0.8s ease;
+            font-size: 16px;
+            font-weight: 600;
+            color: #077bc4;
+            margin-left: 8px;
+            padding: 3px 0 3px 5px;
+            &:hover{
+                background-color: #077bc4;
+                color: white;
+                transition: 0.5s ease-in;
+            }
+        }
+    }
+    @include xxl{
+        margin: 10px;
+        padding: 12px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        &:nth-child(5){
+            border-bottom: none;
+        }
+        .faq-question{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+            font-weight: 700;
+            color: #242424;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            &:hover{
+                color:#077bc4;
+            }
+            svg{
+                font-size: 10px;
+                font-weight: 300;
+                transform: rotate(0deg);
+                transition: all 0.4s ease;
+            }
+        }
+        .faq-answer{
+            opacity: 0;
+            max-height: 0;
+            overflow-y: hidden;
+            transition: all 0.8s ease;
+            font-size: 13px;
+            font-weight: 600;
+            color: #077bc4;
+            margin-left: 8px;
+            padding: 3px 0 3px 5px;
+            &:hover{
+                background-color: #077bc4;
+                color: white;
+                transition: 0.5s ease-in;
+            }
+        }
+    }
+}
+.faq{
+    &.open{
+        .faq-question{
+            margin-bottom: 20px;
+            &:hover{
+                color: #242424;
+            }
+            svg{
+                transform: rotate(180deg);
+            }
+        }
+        .faq-answer{
+            opacity: 1;
+            max-height: 100px;
+        }
+    }
+}

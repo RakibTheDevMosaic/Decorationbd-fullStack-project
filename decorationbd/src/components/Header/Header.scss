@@ -1,0 +1,26 @@
+.dropDown{
+    z-index: 99999999;
+    transform: translateY(-30px);
+    animation: catSlide 0.5s ease forwards;
+}
+
+@keyframes catSlide{
+    0%{transform: translateY(-30px);}
+    100%{transform: translateY(0);}
+}
+.headerAnimation{
+    transform: translateY(-100%);
+    animation: slideHeader 0.6s ease forwards;
+}
+@keyframes slideHeader {
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(0%);}
+}
+.openSideBar{
+    transform: translateX(-100%);
+    animation: slideMobileSideBar 0.6s ease forwards;
+}
+@keyframes slideMobileSideBar {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(0%);}
+}

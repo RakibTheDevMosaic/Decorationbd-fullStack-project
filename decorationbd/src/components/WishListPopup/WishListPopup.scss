@@ -1,0 +1,8 @@
+.wishList{
+    transform: translateX(100%);
+    animation: wishList 0.8s ease forwards;
+}
+@keyframes wishList {
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(0%);}
+}

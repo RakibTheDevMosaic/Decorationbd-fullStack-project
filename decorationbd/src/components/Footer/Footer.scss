@@ -1,0 +1,595 @@
+@import "../../css-config/mixins.scss";
+
+.footerSection{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: white;
+    margin-top: 0;
+    @include md{
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        color: white;
+        margin-top: 40px;
+        padding: 10px;
+    }
+    @include lg{
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        color: white;
+        margin-top: 60px;
+        padding: 10px;
+    }
+    @include xl{
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        color: white;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    @include xxl{
+        width: 100%;
+        height: 380px;
+        background-color:#000000 ;
+        color: white;
+        margin-top: 80px;
+    }
+
+
+    .others{
+        .category{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 18px auto;
+            
+            @include sm{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 5px auto;
+            }
+            @include md{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 20px;
+                margin-right: 0;
+                margin-left: 50px;
+            }
+            @include lg{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 10px;
+                margin-right: 70px;
+            }
+            @include xl{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 10px;
+                margin-right: 180px;
+            }
+            @include xxl{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 30px;
+                margin-right: 140px;
+            }
+            .title{
+                font-weight: 600;
+                font-size: 16px;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+                @include sm{
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                }
+                @include md{
+                    font-weight: 600;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    
+                }
+                @include lg{
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    margin-bottom: 15px;
+                }
+                @include xxl{
+                    font-weight: 600;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                }
+            }
+            .items{
+                text-transform: capitalize;
+                align-items: center;
+                text-align: start;
+                div{
+                    margin-bottom: 5px;
+                    color: rgba(255,255,255,0.8);
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 600;
+                    &:hover{
+                        color: white;
+                    }
+                }
+                @include sm{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: center;
+                    div{
+                        margin-bottom: 5px;
+                        color: rgba(255,255,255,0.8);
+                        cursor: pointer;
+                        font-size: 16px;
+                        font-weight: 600;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+                @include md{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: start;
+                    div{
+                        margin-bottom: 6px;
+                        color: rgba(255,255,255,0.7);
+                        cursor: pointer;
+                        font-size: 13px;
+                        font-weight: 600;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+                @include lg{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: start;
+                    div{
+                        margin-bottom: 10px;
+                        color: rgba(255,255,255,0.7);
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 600;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+                @include xl{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: start;
+                    div{
+                        margin-bottom: 12px;
+                        color: rgba(255,255,255,0.7);
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 600;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+                @include xxl{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: start;
+                    div{
+                        margin-bottom: 12px;
+                        color: rgba(255,255,255,0.7);
+                        cursor: pointer;
+                        font-size: 13px;
+                        font-weight: 600;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .links{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 25px;
+            @include sm{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 15px auto;
+            }
+            @include md{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 30px;
+                margin-right: 0;
+                margin-left: 0;
+                padding-left: 50px;
+            }
+            @include lg{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 50px;
+                margin-right: 0;
+                margin-left: 20px;
+            }
+            @include xl{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 50px;
+                margin-right: 50px;
+                margin-left: 0;
+            }
+            @include xxl{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 60px;
+                margin-right: 50px;
+            }
+            .title{
+                font-weight: 600;
+                font-size: 16px;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+                margin-right: 14px;
+                @include sm{
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                    margin-right: 0;
+                }
+                @include md{
+                    font-weight: 600;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    margin-right: 40px;
+                }
+                @include lg{
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    margin-bottom: 15px;
+                    margin-right: 54px;
+                }
+                @include xl{
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    margin-bottom: 15px;
+                    margin-right: 60px;
+                }
+                @include xxl{
+                    font-weight: 600;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 15px;
+                    margin-right: 62px;
+                }
+            }
+            .items{
+                text-transform: capitalize;
+                align-items: center;
+                text-align: start;
+                div{
+                    margin-bottom: 5px;
+                    color: rgba(255,255,255,0.8);
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                @include sm{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: center;
+                    div{
+                        margin-bottom: 5px;
+                        color: rgba(255,255,255,0.8);
+                        cursor: pointer;
+                        font-size: 16px;
+                        font-weight: 600;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+                @include md{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: start;
+                    div{
+                        margin-bottom: 6px;
+                        color: rgba(255,255,255,0.7);
+                        cursor: pointer;
+                        font-size: 13px;
+                        font-weight: 600;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+                @include lg{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: start;
+                    div{
+                        margin-bottom: 10px;
+                        color: rgba(255,255,255,0.7);
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 600;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+                @include xl{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: start;
+                    div{
+                        margin-bottom: 12px;
+                        color: rgba(255,255,255,0.7);
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 600;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+                @include xxl{
+                    text-transform: capitalize;
+                    align-items: center;
+                    text-align: start;
+                    div{
+                        margin-bottom: 10px;
+                        color: rgba(255,255,255,0.7);
+                        cursor: pointer;
+                        font-size: 13px;
+                        font-weight: 600;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .contact{
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 0;
+            // margin-right: 2px;
+            @include sm{
+                align-items: center;
+                margin-top: 20px;
+                // margin-left: 120px;
+            //    text-align: center;
+            }
+            @include md{
+                align-items: center;
+                margin-top: 35px;
+                margin-left: 0;
+                margin-right: 20px;
+                margin-bottom: 90px;
+            }
+            @include lg{
+                align-items: center;
+                margin-top: 0;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 40px;
+            }
+            @include xl{
+                align-items: center;
+                margin-top: 0;
+                margin-bottom: 40px;
+                margin-left: 30px;
+                margin-right: 20px;
+            }
+            @include xxl{
+                align-items: center;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 40px;
+            }
+            .title{
+                font-weight: 600;
+                font-size: 16px;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+                @include sm{
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                    text-align: center;
+                }
+                @include md{
+                    font-weight: 600;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    margin-right: 50px;
+                }
+                @include lg{
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    margin-bottom: 15px;
+                    margin-right: 40px;
+                }
+                @include xl{
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    margin-bottom: 15px;
+                    margin-right: 30px;
+                }
+                @include xxl{
+                    font-weight: 600;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-bottom: 15px;
+                    margin-right: 20px;
+                }
+            }
+            .item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+                color: rgba(255,255,255,0.8);
+                &:hover{
+                    color: white;
+                }
+                svg{
+                    flex-shrink: 0;
+                    font-size: 13px;
+                    margin-right: 3px;
+                }
+                span{
+                    display: block;
+                    cursor: pointer;
+                    font-size: 12px;
+                }
+                @include sm{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 5px;
+                    color: rgba(255,255,255,0.8);
+                    &:hover{
+                        color: white;
+                    }
+                    svg{
+                        flex-shrink: 0;
+                        font-size: 16px;
+                        margin-right: 3px;
+                    }
+                    span{
+                        display: block;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+                }
+                @include md{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    margin-left: 50px;
+                    margin-bottom: 7px;
+                    color: rgba(255,255,255,0.7);
+                    &:hover{
+                        color: white;
+                    }
+                    svg{
+                        flex-shrink: 0;
+                        font-size: 14px;
+                        margin-right: 6px;
+                        // margin-top: 2px;
+                    }
+                    span{
+                        display: block;
+                        // margin-bottom: 10px;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                }
+                @include lg{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    margin-left: 50px;
+                    margin-bottom: 10px;
+                    color: rgba(255,255,255,0.7);
+                    &:hover{
+                        color: white;
+                    }
+                    svg{
+                        flex-shrink: 0;
+                        font-size: 14px;
+                        margin-right: 10px;
+                        // margin-top: 2px;
+                    }
+                    span{
+                        display: block;
+                        // margin-bottom: 10px;
+                        cursor: pointer;
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                }
+                @include xl{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    margin-left: 70px;
+                    margin-bottom: 10px;
+                    color: rgba(255,255,255,0.7);
+                    &:hover{
+                        color: white;
+                    }
+                    svg{
+                        flex-shrink: 0;
+                        font-size: 14px;
+                        margin-right: 10px;
+                        // margin-top: 2px;
+                    }
+                    span{
+                        display: block;
+                        // margin-bottom: 10px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+                @include xxl{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    margin-left: 80px;
+                    margin-bottom: 10px;
+                    color: rgba(255,255,255,0.7);
+                    &:hover{
+                        color: white;
+                    }
+                    svg{
+                        flex-shrink: 0;
+                        font-size: 13px;
+                        margin-right: 10px;
+                        // margin-top: 2px;
+                    }
+                    span{
+                        display: block;
+                        // margin-bottom: 10px;
+                        cursor: pointer;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+}

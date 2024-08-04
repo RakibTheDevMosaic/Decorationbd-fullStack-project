@@ -1,0 +1,197 @@
+@import "../../css-config/mixins.scss";
+.ShopSection{
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    .StickCatAndOtherFilltering{
+        margin-top: 100px;
+        margin-left: 0;
+        margin-right: 10px;
+        width: 100%;
+        max-width: 18%;
+        
+        .heading{
+            width: 270px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 26px;
+            background-color: #eaeaea;
+            border: 1px solid rgba(0,0,0,0.1);
+            padding: 12px;
+            text-align: center;
+            color: #242424;
+        }
+        @include xl{
+            margin-top: 30px;
+            margin-left: 20px;
+            width: 100%;
+            max-width: 25%;
+            
+            .heading{
+                width: 270px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 20px;
+                background-color: #eaeaea;
+                border: 1px solid rgba(0,0,0,0.1);
+                padding: 14px 6px;
+                text-align: center;
+                color: #242424;
+            }
+        }
+        @include xxl{
+            margin-top: 30px;
+            margin-left: 20px;
+            width: 100%;
+            max-width: 25%;
+            
+            .heading{
+                width: 270px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 20px;
+                background-color: #eaeaea;
+                border: 1px solid rgba(0,0,0,0.1);
+                padding: 14px 6px;
+                text-align: center;
+                color: #242424;
+            }
+        }
+    }
+    .productLayout{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin-top: 80px;
+        @include xl{
+            width: 100%;
+            max-width: 76%;
+            height: 100%;
+            margin-top: 30px;
+        }
+        @include xxl{
+            width: 100%;
+            max-width: 75%;
+            height: 100%;
+            margin-top: 30px;
+        }
+        .textAndProductGridLayoutIcons{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            @include xl{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .txt{
+                font-weight: 600;
+                font-size: 18px;
+                color: #242424;
+                text-transform: capitalize;
+                cursor: pointer;
+                span{
+                    &:hover{
+                        color: #077bc4;
+                    }
+                }
+                @include xxl{
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #242424;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    span{
+                        &:hover{
+                            color: #077bc4;
+                        }
+                    }
+                }
+            }
+            .gridIcons{
+                display: none;
+                @include xl{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    svg{
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: #242424;
+                        cursor: pointer;
+                    }
+                }
+                @include xxl{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    svg{
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: #242424;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .itemOfProduct{
+                margin-right: 0;
+                .text{
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                span{
+                    margin: 0 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 600;
+                    // color: #242424;
+                    &:hover{
+                        color: gray;
+                    }
+                }
+                @include xl{
+                    margin-right: 10px;
+                    .text{
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                    span{
+                        margin: 0 5px;
+                        cursor: pointer;
+                        font-size: 18px;
+                        font-weight: 600;
+                        // color: #242424;
+                        &:hover{
+                            color: gray;
+                        }
+                    }
+                }
+                @include xxl{
+                    margin-right: 10px;
+                    .text{
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                    span{
+                        margin: 0 5px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 600;
+                        // color: #242424;
+                        &:hover{
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+        .productsPart{
+            background-color: #eaeaea;
+        }
+    }
+}

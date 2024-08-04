@@ -1,0 +1,9 @@
+.sliding-line {
+    transform: translateX(-100%); /* Adjust initial translation */
+    // transition: transform 1s ease; /* Transition for animation */
+    animation: slideLine 1.5s ease forwards;
+}
+@keyframes slideLine {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(0);}
+}

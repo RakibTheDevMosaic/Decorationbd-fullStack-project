@@ -1,0 +1,87 @@
+@import "../../css-config/mixins.scss";
+.catData1{
+    border-top: 1px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+    &:nth-child(1){
+        border-top: 0;
+    }
+    .arrow{
+        color: rgba(0,0,0,0.5);
+    }
+}
+
+.subCategory1{
+    width: 15rem;
+    position: absolute;
+    background-color: #ffff;
+    right: -241px;
+    top: 0;
+    z-index: 999;
+    transform: translateX(-0.7rem);
+    animation: slideSubCat 0.3s ease forwards;
+    .subCategoryItems1{
+        align-items: center;
+        width: 100%;
+        div{
+            display: flex;
+            align-items: center;
+            .subCategory-item1{
+                padding: 1rem;
+                font-size: 18px;
+                color: gray;
+                text-align: start;
+                &:hover{
+                    color: #007bc4;
+                }
+            }
+            svg{
+                font-size: 20px;
+                margin-left: 10px;
+            }
+        }
+        
+       
+       
+    }
+    @include xxl{
+        width: 13rem;
+        position: absolute;
+        background-color: #fff;
+        right: -208px;
+        top: 0;
+        z-index: 999;
+        transform: translateX(-0.7rem);
+        animation: slideSubCat 0.3s ease forwards;
+        .subCategoryItems1{
+            align-items: center;
+            width: 100%;
+            div{
+                display: flex;
+                align-items: center;
+                .subCategory-item1{
+                    padding: .8rem;
+                    font-size: 13px;
+                    color: gray;
+                    text-align: start;
+                    &:hover{
+                        color: #007bc4;
+                    }
+                }
+                svg{
+                    font-size: 14px;
+                    margin-left: 10px;
+                }
+            }
+            
+           
+           
+        }
+    }
+   
+    
+}
+
+@keyframes slideSubCat {
+    0%{transform: translateX(-0.7rem);}
+    100%{transform: translateX(0);}
+}

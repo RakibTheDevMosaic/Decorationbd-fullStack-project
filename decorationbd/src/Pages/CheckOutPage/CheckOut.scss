@@ -1,0 +1,82 @@
+@import"../../css-config/mixins.scss";
+.closeCoupon{
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 1s ease;
+}
+.openCoupon{
+    opacity: 1;
+    max-height: 50px;
+    transition: all 1s ease;
+}
+
+.closePcod{
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 1s ease;
+}
+.openPcod{
+    opacity: 1;
+    max-height: 160px;
+    transition: all 1s ease;
+    @include md{
+        opacity: 1;
+        max-height: 150px;
+        transition: all 1s ease;
+    }
+}
+.closeButton2{
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 1s ease;
+}
+.openButton2{
+    opacity: 1;
+    max-height: 250px;
+    transition: all 1s ease;
+    @include md{
+        opacity: 1;
+        max-height: 200px;
+        transition: all 1s ease;
+    }
+    @include xxl{
+        opacity: 1;
+        max-height: 180px;
+        transition: all 1s ease;
+    }
+}
+.closeButton{
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 1s ease;
+}
+.openButton{
+    opacity: 1;
+    max-height: 250px;
+    transition: all 1s ease;
+    @include md{
+        opacity: 1;
+        max-height: 200px;
+        transition: all 1s ease;
+    }
+    @include xxl{
+        opacity: 1;
+        max-height: 120px;
+        transition: all 1s ease;
+    }
+}
+.closeFullPayment{
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 1s ease;
+}
+.openFullPayment{
+    opacity: 1;
+    max-height: 300px;
+    transition: all 1s ease;
+}
